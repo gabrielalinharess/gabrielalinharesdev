@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Linhares | Desenvolvedora Web</title>
+    <meta name="description" content="Portfólio de Gabriela Linhares, Desenvolvedora Web especializada na criação de sites modernos, responsivos e focados em experiência visual. Projetos, propostas e desenvolvimento web.">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div id="particles"></div>
+
+    <!-- Header Fixo -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">GABRIELA LINHARES</div>
+            
+            <nav class="nav">
+                <a href="#sobre" class="nav-item">SOBRE</a>
+                <a href="#habilidades" class="nav-item">HABILIDADES</a>
+                <a href="#projetos" class="nav-item">PROJETOS</a>
+                <a href="#servicos" class="nav-item">SERVIÇOS</a>
+                <a href="#contato" class="nav-item">CONTATO</a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-photo-container" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <div class="hero-photo-wrapper">
+                            <img src="images/gabriela-profile.jpg" alt="Gabriela Linhares" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="hero-photo-caption" style="text-align: center;">
+                            <h3 style="font-size: 1.1rem; font-weight: 500; letter-spacing: 2px; margin-bottom: 5px; color: var(--color-text);">GABRIELA LINHARES</h3>
+                            <p style="font-size: 0.8rem; color: var(--color-gold); font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Programadora Front-End</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Linha de luz vertical animada -->
+                    <div class="hero-line-container">
+                        <div class="hero-line">
+                            <div class="light-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <h1 class="hero-title">GABRIELA LINHARES</h1>
+                    <h2 class="hero-subtitle">DESENVOLVEDORA WEB</h2>
+                    <p class="hero-text">Desenvolvimento web com precisão, estética e tecnologia.</p>
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-outline">[ PROJETOS ]</a>
+                        <a href="#contato" class="btn btn-solid">[ CONTATO ]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section reveal">
+            <div class="section-container">
+                <h2 class="section-title">SOBRE</h2>
+                <div class="sobre-content">
+                    <p class="sobre-text">
+                        Desenvolvedora Web / Front-End dedicada à criação de sites modernos, responsivos e funcionais, com foco em tecnologia, experiência visual e qualidade de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="section reveal">
+            <div class="section-container">
+                <h2 class="section-title">HABILIDADES</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">GitHub</div>
+                    <div class="skill-item">Responsive Design</div>
+                    <div class="skill-item">UI/UX</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section reveal">
+            <div class="section-container">
+                <h2 class="section-title">PROJETOS</h2>
+                <div class="projects-grid">
+                    
+
+                    <!-- Projeto (Site de Corretora) -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/projeto_corretora.jpg" alt="Landing Page de Corretagem Gabriela Linhares" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name">Landing Page de corretagem</h3>
+                            <p class="project-desc">Plataforma digital completa para corretagem focada na atração e captação de clientes de alto padrão.</p>
+                            <div class="project-techs">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Design Web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://wa.me/5583974002281?text=Ol%C3%A1%20Gabriela%2C%20vi%20o%20seu%20projeto%20de%20corretagem%20e%20gostaria%20de%20um%20site%20semelhante" target="_blank" class="btn-link">SOLICITAR PROJETO SIMILAR</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="servicos" class="section reveal">
+            <div class="section-container">
+                <h2 class="section-title">SERVIÇOS</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="openModal('criacao_sites')">
+                        <h3>CRIAÇÃO DE SITES</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                    <div class="service-card" onclick="openModal('landing_pages')">
+                        <h3>LANDING PAGES</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                    <div class="service-card" onclick="openModal('institucional')">
+                        <h3>SITES INSTITUCIONAIS</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                    <div class="service-card" onclick="openModal('portfolio')">
+                        <h3>PORTFÓLIOS</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                    <div class="service-card" onclick="openModal('business')">
+                        <h3>SITES PARA NEGÓCIOS</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                    <div class="service-card" onclick="openModal('maintenance')">
+                        <h3>MANUTENÇÃO DE SITES</h3>
+                        <span class="btn-saiba-mais">saiba mais</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section reveal">
+            <div class="section-container">
+                <h2 class="section-title">CONTATO</h2>
+                <p class="contact-text">Projetos, propostas e desenvolvimento web.</p>
+                
+                <div class="contact-links">
+                    <a href="https://wa.me/5583974002281" target="_blank" class="contact-link">WHATSAPP</a>
+                    
+                    <div class="email-link-wrapper">
+                        <button type="button" class="contact-link email-trigger-btn" id="emailTriggerBtn" onclick="toggleEmailPopup(event)">E-MAIL</button>
+                        
+                        <!-- Balão com o e-mail que abre em cima da palavra E-MAIL -->
+                        <div id="emailPopup" class="email-popup">
+                            <div class="email-popup-content">
+                                <span class="popup-email-text" onclick="copyEmailFromPopup(event)" title="Clique para copiar">mariagabrielalinharess@yahoo.com</span>
+                                <button type="button" class="popup-copy-btn" onclick="copyEmailFromPopup(event)" title="Copiar e-mail">
+                                    <span id="popupCopyText">Copiar</span>
+                                </button>
+                            </div>
+                            <div class="popup-arrow"></div>
+                        </div>
+                    </div>
+
+                    <a href="https://instagram.com/gabrielalinharess_" target="_blank" class="contact-link">INSTAGRAM</a>
+                    <a href="https://github.com/gabrielalinhares" target="_blank" class="contact-link">GITHUB</a>
+                </div>
+
+                <div class="contact-action">
+                    <a href="https://wa.me/5583974002281" target="_blank" class="btn btn-solid">ENTRAR EM CONTATO</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Modal de Serviços -->
+        <div id="serviceModal" class="modal">
+            <div class="modal-overlay" onclick="closeModal()"></div>
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">×</button>
+                <div class="modal-body">
+                    <div class="modal-left">
+                        <div class="modal-photo-wrapper">
+                            <img id="modalImage" src="" alt="Serviço">
+                        </div>
+                        <div class="modal-line-container">
+                            <div class="modal-line">
+                                <div class="modal-light-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <h2 id="modalTitle" class="modal-title">TÍTULO</h2>
+                        <ul id="modalList" class="modal-list">
+                            <!-- Inserido via JS -->
+                        </ul>
+                        <a id="modalWhatsappBtn" href="#" target="_blank" class="btn btn-whatsapp">
+                            Solicitar via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 GABRIELA LINHARES. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
