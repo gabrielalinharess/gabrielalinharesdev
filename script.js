@@ -206,7 +206,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Preencher conteúdo
         modalTitle.textContent = data.title;
-        modalImage.src = data.image;
+        modalImage.src = data.image.includes('/') ? data.image.split('/').pop() : data.image;
+        modalImage.onerror = function() {
+            if (!this.dataset.retry) {
+                this.dataset.retry = 1;
+                this.src = 'images/' + (data.image.includes('/') ? data.image.split('/').pop() : data.image);
+            }
+        };
         modalList.innerHTML = data.points.map(point => `<li>${point}</li>`).join('');
         modalWhatsappBtn.href = `https://wa.me/5583974002281?text=${encodeURIComponent(data.whatsappMessage)}`;
 
